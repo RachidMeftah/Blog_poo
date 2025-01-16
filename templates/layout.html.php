@@ -12,7 +12,7 @@
 
   <div class="container-fluid p-5 bg-primary text-white text-center">
     <h1><?php echo "HELLO" ?></h1>
-    <p>Resize this responsive page to see the effect!</p>
+    <p>Bien venu dans mon blog</p>
   </div>
 
   <div class="container mt-5">
