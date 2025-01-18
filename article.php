@@ -1,5 +1,9 @@
 <?php
-require_once('database.php');
+//require_once('librarises/database.php');
+require_once('librarises/models/Article.php');
+
+$model = new Article();
+
 /**
  * 1. Récupération du param "id" et vérification de celui-ci
  */
@@ -16,7 +20,7 @@ if (!$article_id) {
     die("Vous devez préciser un paramètre `id` dans l'URL !");
 }
 
-$article = findArticle($article_id);
+$article = $model->find($article_id);
 
 /**
  * 5. On affiche 
